@@ -235,10 +235,85 @@ html {
   overflow: hidden;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Josefin Sans";
+* {
+  margin: 0;
+  padding: 0;
 }
 
-p {
+body {
+  font-size: 125%;
+  background-color: #2B331B;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans";
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+.giveaway h2,
+.atmosphere h2,
+.employment h2 {
+  color: #FFd300;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: 1.3;
+}
+
+h4 {
+  color: #FFd300;
+  font-size: 1.25rem;
+  letter-spacing: 0.8;
+}
+
+h5, p {
   font-family: "Barlow";
+  color: #FFF;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+a {
+  color: #FFF;
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+}
+a.yellow {
+  background-color: #FFd300;
+  color: #0F0F0F;
+}
+a.black {
+  background-color: #0F0F0F;
 }
