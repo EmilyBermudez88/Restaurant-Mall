@@ -34,7 +34,40 @@
     align-items: center;
 }
 
+// HIGHLIGHTS SECTION
 
+.highlights {
+    min-height: 70vh;
+    background-color: $secondary;
+    position:relative;
+    .highlightsContainer {
+        display:flex;
+        flex-direction:row;
+        div {
+        width: calc(50% - 50px);
+        }
+    }
+    .dishFlex {
+        flex-direction:row-reverse;
+    }
+}
+
+.burgerImgContainer {
+    position:absolute;
+    left:0;
+    top: -30px;
+    img {
+        box-shadow: 15px 15px 0 $accent;
+    }
+}
+.newDishImgContainer {
+    position:absolute;
+    right:0;
+    bottom: -30px;
+    img {
+        box-shadow: -15px 15px 0 $accent;;
+    }
+}
 
 // GIVEAWAY SECTION
 
@@ -79,6 +112,10 @@
         .natureImgContainer {
             box-shadow: -15px 15px 0 $accent;
             margin-left: 15px;
+            img {
+                height:100%;
+                object-fit: cover;
+            }
         }
     }
 

@@ -412,6 +412,50 @@ h1 span {
           align-items: center;
 }
 
+.highlights {
+  min-height: 70vh;
+  background-color: #171B0E;
+  position: relative;
+}
+.highlights .highlightsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.highlights .highlightsContainer div {
+  width: calc(50% - 50px);
+}
+.highlights .dishFlex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.burgerImgContainer {
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+.burgerImgContainer img {
+  -webkit-box-shadow: 15px 15px 0 #FFd300;
+          box-shadow: 15px 15px 0 #FFd300;
+}
+
+.newDishImgContainer {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+}
+.newDishImgContainer img {
+  -webkit-box-shadow: -15px 15px 0 #FFd300;
+          box-shadow: -15px 15px 0 #FFd300;
+}
+
 .giveawayContainer {
   width: 80%;
   margin: 110px auto;
@@ -468,6 +512,11 @@ h1 span {
   -webkit-box-shadow: -15px 15px 0 #FFd300;
           box-shadow: -15px 15px 0 #FFd300;
   margin-left: 15px;
+}
+.nature .natureImgContainer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery {
