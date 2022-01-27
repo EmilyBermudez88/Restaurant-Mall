@@ -1,4 +1,4 @@
-// ABOUT SECTION
+/////////// ABOUT SECTION ////////////
 .about {
     margin-top: 200px;
 }
@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-// HIGHLIGHTS SECTION
+//////////// HIGHLIGHTS SECTION ///////////
 
 .highlights {
     min-height:70vh;
@@ -42,7 +42,7 @@
     position:relative;
     .highlightsContainer {
         border: 5px solid blue;
-        height:50%;
+        // height:50%;
         display:flex;
         flex-direction:row;
         justify-content: flex-end;
@@ -55,37 +55,31 @@
     }
 }
 
-// get rid of position absolute, change it to relative
-// justify-content to flex-start instead of flex-end
-// get rid of height restrictions 
-// get rid of wrapper in HTML 
-
 .burgerImgContainer,
 .newDishImgContainer {
     position:absolute;
-    max-height:350px;
-    border: 10px solid white;
+    max-height:400px;
+    border: 15px solid white;
     img {
+        width:100%;
         height: 100%;
         object-fit:cover;
     }
 }
 
 .burgerImgContainer {
-    position:absolute;
     left:0;
     top: -30px;
     img {
-        box-shadow: 15px 15px 0 $accent;
+        // box-shadow: 15px 15px 0 $accent;
     }
 }
 
 .newDishImgContainer {
-    position:absolute;
     right:0;
     bottom: -30px;
     img {
-        box-shadow: -15px 15px 0 $accent;
+        // box-shadow: -15px 15px 0 $accent;
     }
 }
 
@@ -97,7 +91,12 @@
     }
 }
 
-// GIVEAWAY SECTION
+// get rid of position absolute, change it to relative
+// justify-content to flex-start instead of flex-end
+// get rid of height restrictions 
+// get rid of wrapper in HTML 
+
+///////// GIVEAWAY SECTION/////////
 
 .giveawayContainer {
     width: 80%;
@@ -110,7 +109,7 @@
     }
 }
 
-// BANNER SECTION
+///////////// BANNER SECTION /////////////
 .bannerImgContainer {
     width: 100%;
     img {
@@ -120,34 +119,34 @@
     }
 }
 
-// ATMOSPHERE 
+///////////// ATMOSPHERE /////////////
 
 .atmosphere {
     margin: 110px auto;
 }
 
 .nature {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .natureTextContainer {
-            width: 70%;
-            margin-left: 55px;
-            p {
-                margin: 20px auto;
-            }
-        }
-        .natureImgContainer {
-            box-shadow: -15px 15px 0 $accent;
-            margin-left: 15px;
-            img {
-                height:100%;
-                object-fit: cover;
-            }
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .natureTextContainer {
+        width: 70%;
+        margin-left: 55px;
+        p {
+            margin: 20px auto;
         }
     }
+    .natureImgContainer {
+        box-shadow: -15px 15px 0 $accent;
+        margin-left: 15px;
+        img {
+            height:100%;
+            object-fit: cover;
+        }
+    }
+}
 
-// GALLERY SECTION
+/////////////// GALLERY SECTION /////////////
 
 .gallery {
     background-color: $secondary;
@@ -167,7 +166,7 @@
 }
 
 
-// FOOTER
+/////////////// FOOTER ///////////////
 
 footer {
     background-color: $black;
@@ -177,9 +176,9 @@ footer {
     }
 }
 
-// BLOG PAGE
+//////////// BLOG PAGE //////////////
 
-// Blog-Layout
+//// Blog-Layout ////
 .blogMain {
     display:flex;
     flex-direction: row;
@@ -197,10 +196,10 @@ footer {
     }
 }
 
-// Blog- Main Content
+//// Blog- Main Content ////
 .employmentImgContainer {
     position: relative;
-    top: -30px;
+    top: -50px;
     left:10px;
     width:calc(100% - 10px);
     img {
@@ -240,6 +239,7 @@ footer {
             h5 {
                 color:$accent;
             }
+        }
         .commentImgContainer {
             img{
             height:90px;
@@ -249,29 +249,34 @@ footer {
     }
 }
 
-// Blog-Aside 
+//// Blog-Aside ////
 
-aside {
+.feature {
     position:sticky;
     top:15px;
     margin-top:90px;
     .featureImgContainer {
         position:relative;
         top: -15px;
-        width: calc(100% - 15px);
-        box-shadow: 15px 15px 0 $secondary;
+        overflow:hidden;
+        img {
+            width: calc(100% - 15px);
+            box-shadow: 15px 15px 0 $secondary;
+        }
     }
     .featureTextContainer {
+        position:relative;
+        top:-15px;
         width:80%;
         height:100%;
         margin-left:20%;
-        padding:0 15px;
+        padding:15px 15px 0 15px;
         div {
             padding: 20px 0;
         }
     }
 }
-}
+
 
 .featureTextContainer{
     background-color: $secondary;
@@ -287,7 +292,7 @@ aside {
     }
 }
 
-// CONTACT PAGE
+//////////// CONTACT PAGE /////////////
 
 .contactContainer {
     display:flex;
