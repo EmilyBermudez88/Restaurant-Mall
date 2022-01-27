@@ -37,18 +37,37 @@
 // HIGHLIGHTS SECTION
 
 .highlights {
-    min-height: 70vh;
+    min-height:70vh;
     background-color: $secondary;
     position:relative;
     .highlightsContainer {
+        border: 5px solid blue;
+        height:50%;
         display:flex;
         flex-direction:row;
+        justify-content: flex-end;
         div {
         width: calc(50% - 50px);
         }
     }
     .dishFlex {
         flex-direction:row-reverse;
+    }
+}
+
+// get rid of position absolute, change it to relative
+// justify-content to flex-start instead of flex-end
+// get rid of height restrictions 
+// get rid of wrapper in HTML 
+
+.burgerImgContainer,
+.newDishImgContainer {
+    position:absolute;
+    max-height:350px;
+    border: 10px solid white;
+    img {
+        height: 100%;
+        object-fit:cover;
     }
 }
 
@@ -60,12 +79,21 @@
         box-shadow: 15px 15px 0 $accent;
     }
 }
+
 .newDishImgContainer {
     position:absolute;
     right:0;
     bottom: -30px;
     img {
-        box-shadow: -15px 15px 0 $accent;;
+        box-shadow: -15px 15px 0 $accent;
+    }
+}
+
+.burgerTextContainer,
+.newDishTextContainer {
+    margin: 80px 0;
+    p {
+        margin: 20px 0 30px 0;
     }
 }
 
@@ -138,6 +166,7 @@
     }
 }
 
+
 // FOOTER
 
 footer {
@@ -145,5 +174,115 @@ footer {
     text-align: center;
     p {
         padding: 10px;
+    }
+}
+
+// BLOG PAGE
+
+// Blog-Layout
+.blogMain {
+    display:flex;
+    flex-direction: row;
+    .stickyContainer {
+        width: calc(30% - 50px);
+        margin-right: 50px;
+    }
+    .blogContent{
+        width: calc(70% - 50px);
+        margin-left: 50px;
+        .employment {
+            border-left: 5px solid $accent;
+            border-bottom: 5px solid $accent;
+        }
+    }
+}
+
+// Blog- Main Content
+.employmentImgContainer {
+    position: relative;
+    top: -30px;
+    left:10px;
+    width:calc(100% - 10px);
+    img {
+        box-shadow: -15px 15px 0 $accent;
+    }
+}
+
+.wrapper2 {
+    width: 75%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.employmentTextContainer {
+    margin: 50px 0 75px 0;
+    h5 {
+        margin:15px 0 25px 0;
+        font-weight: 600;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.comments {
+    margin: 50px 0 75px 0;
+    h3{
+        margin-bottom: 20px;
+    }
+    .commentContainer {
+        display:flex;
+        flex-direction:row;
+        margin-bottom:60px;
+        .commentTextContainer {
+            width:80%;
+            padding-left:30px;
+            h5 {
+                color:$accent;
+            }
+        .commentImgContainer {
+            img{
+            height:90px;
+            margin-top:6px;
+            }
+        }
+    }
+}
+
+// Blog-Aside 
+
+aside {
+    position:sticky;
+    top:15px;
+    margin-top:90px;
+    .featureImgContainer {
+        position:relative;
+        top: -15px;
+        width: calc(100% - 15px);
+        box-shadow: 15px 15px 0 $secondary;
+    }
+    .featureTextContainer {
+        width:80%;
+        height:100%;
+        margin-left:20%;
+        padding:0 15px;
+        div {
+            padding: 20px 0;
+        }
+    }
+}
+}
+
+.featureTextContainer{
+    background-color: $secondary;
+    h4{
+        margin-bottom:10px;
+    }
+    ul{
+        list-style:disc;
+        list-style-position: inside;
+        li {
+        color:$white;
+        }
     }
 }

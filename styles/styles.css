@@ -269,6 +269,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 400;
 }
 
 .giveaway h2,
@@ -279,19 +280,22 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  letter-spacing: 1.3;
+  font-weight: 400;
+  letter-spacing: 1.3px;
 }
 
 h4 {
   color: #FFd300;
   font-size: 1.25rem;
-  letter-spacing: 0.8;
+  font-weight: 400;
+  letter-spacing: 0.8px;
 }
 
-h5, p {
+h5, li, p {
   font-family: "Barlow";
   color: #FFF;
   font-size: 1rem;
+  line-height: 28px;
 }
 
 ul {
@@ -300,6 +304,8 @@ ul {
 ul a {
   text-transform: capitalize;
   font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 1px;
   padding: 0 0 5px 0;
 }
 ul a:hover {
@@ -361,6 +367,12 @@ h1 span {
   margin-bottom: 10px;
 }
 
+.blogHeader {
+  height: 60vh;
+  background-image: url(../assets/blog-header.jpg);
+  background-position: 75%;
+}
+
 .about {
   margin-top: 200px;
 }
@@ -418,6 +430,8 @@ h1 span {
   position: relative;
 }
 .highlights .highlightsContainer {
+  border: 5px solid blue;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,6 +439,9 @@ h1 span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .highlights .highlightsContainer div {
   width: calc(50% - 50px);
@@ -434,6 +451,19 @@ h1 span {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.burgerImgContainer,
+.newDishImgContainer {
+  position: absolute;
+  max-height: 350px;
+  border: 10px solid white;
+}
+.burgerImgContainer img,
+.newDishImgContainer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .burgerImgContainer {
@@ -454,6 +484,15 @@ h1 span {
 .newDishImgContainer img {
   -webkit-box-shadow: -15px 15px 0 #FFd300;
           box-shadow: -15px 15px 0 #FFd300;
+}
+
+.burgerTextContainer,
+.newDishTextContainer {
+  margin: 80px 0;
+}
+.burgerTextContainer p,
+.newDishTextContainer p {
+  margin: 20px 0 30px 0;
 }
 
 .giveawayContainer {
@@ -551,4 +590,117 @@ footer {
 }
 footer p {
   padding: 10px;
+}
+
+.blogMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.blogMain .stickyContainer {
+  width: calc(30% - 50px);
+  margin-right: 50px;
+}
+.blogMain .blogContent {
+  width: calc(70% - 50px);
+  margin-left: 50px;
+}
+.blogMain .blogContent .employment {
+  border-left: 5px solid #FFd300;
+  border-bottom: 5px solid #FFd300;
+}
+
+.employmentImgContainer {
+  position: relative;
+  top: -30px;
+  left: 10px;
+  width: calc(100% - 10px);
+}
+.employmentImgContainer img {
+  -webkit-box-shadow: -15px 15px 0 #FFd300;
+          box-shadow: -15px 15px 0 #FFd300;
+}
+
+.wrapper2 {
+  width: 75%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.employmentTextContainer {
+  margin: 50px 0 75px 0;
+}
+.employmentTextContainer h5 {
+  margin: 15px 0 25px 0;
+  font-weight: 600;
+}
+.employmentTextContainer p {
+  margin-bottom: 20px;
+}
+
+.comments {
+  margin: 50px 0 75px 0;
+}
+.comments h3 {
+  margin-bottom: 20px;
+}
+.comments .commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 60px;
+}
+.comments .commentContainer .commentTextContainer {
+  width: 80%;
+  padding-left: 30px;
+}
+.comments .commentContainer .commentTextContainer h5 {
+  color: #FFd300;
+}
+.comments .commentContainer .commentTextContainer .commentImgContainer img {
+  height: 90px;
+  margin-top: 6px;
+}
+.comments aside {
+  position: sticky;
+  top: 15px;
+  margin-top: 90px;
+}
+.comments aside .featureImgContainer {
+  position: relative;
+  top: -15px;
+  width: calc(100% - 15px);
+  -webkit-box-shadow: 15px 15px 0 #171B0E;
+          box-shadow: 15px 15px 0 #171B0E;
+}
+.comments aside .featureTextContainer {
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+  padding: 0 15px;
+}
+.comments aside .featureTextContainer div {
+  padding: 20px 0;
+}
+
+.featureTextContainer {
+  background-color: #171B0E;
+}
+.featureTextContainer h4 {
+  margin-bottom: 10px;
+}
+.featureTextContainer ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.featureTextContainer ul li {
+  color: #FFF;
 }
