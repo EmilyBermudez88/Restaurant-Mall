@@ -328,6 +328,16 @@ a.black {
   background-color: #0F0F0F;
 }
 
+button {
+  width: 100%;
+  background-color: #FFd300;
+  border: none;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  line-height: 41.6px;
+  cursor: pointer;
+}
+
 header {
   height: 90vh;
   background-image: url(../assets/home-header.jpg);
@@ -368,9 +378,19 @@ h1 span {
 }
 
 .blogHeader {
-  height: 60vh;
+  height: 65vh;
   background-image: url(../assets/blog-header.jpg);
+  background-position-x: 75%;
+  background-position-y: 100%;
+}
+
+.contactHeader {
+  height: 65vh;
+  background-image: url(../assets/contact-header.jpg);
   background-position: 75%;
+}
+.contactHeader h1 {
+  max-width: 60%;
 }
 
 .about {
@@ -703,4 +723,121 @@ footer p {
 }
 .featureTextContainer ul li {
   color: #FFF;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contactContainer .contactTextContainer {
+  width: 30%;
+  margin-top: -40px;
+}
+.contactContainer .contactTextContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contactContainer .contactForm {
+  position: relative;
+  top: -120px;
+}
+
+ul li {
+  margin-right: 15px;
+}
+ul li i {
+  font-size: 1.25rem;
+  color: #FFd300;
+}
+
+.contactInfo p:first-child {
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 47%;
+  border: none;
+  border-bottom: 2px solid #FFd300;
+  padding: 0 0 20px 20px;
+  margin-bottom: 20px;
+  background-color: #2B331B;
+  color: #FFF;
+}
+form input::-webkit-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form input::-moz-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form input:-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form input::-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form input::placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form input[type=text] {
+  margin-right: 5%;
+}
+form textarea {
+  background-color: #2B331B;
+  border: 2px solid #FFd300;
+  color: #FFF;
+  margin: 20px 0 40px 0;
+  width: 100%;
+  resize: none;
+  padding: 20px 0 0 20px;
+}
+form textarea::-webkit-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form textarea::-moz-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form textarea:-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form textarea::-ms-input-placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+form textarea::placeholder {
+  opacity: 1;
+  font-family: "Barlow";
+}
+
+form.contactForm {
+  background-color: #171B0E;
+  padding: 50px 25px;
+  -webkit-box-shadow: 15px 15px 0 #FFd300;
+          box-shadow: 15px 15px 0 #FFd300;
+}
+form.contactForm input {
+  background-color: #171B0E;
+}
+form.contactForm textarea {
+  background-color: #171B0E;
 }

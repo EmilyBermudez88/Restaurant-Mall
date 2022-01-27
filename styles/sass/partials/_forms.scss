@@ -1,0 +1,44 @@
+form {
+    input {
+        width: 47%;
+        border:none;
+        border-bottom: 2px solid $accent;
+        padding:0 0 20px 20px;
+        margin-bottom:20px;
+        background-color: $background;
+        color:$white;
+        &::placeholder{
+            opacity:1;
+            font-family: $bodyFont;
+        }
+    }
+    input[type="text"] {
+        margin-right:5%;
+    }
+    textarea {
+    background-color: $background;
+    border:2px solid $accent;
+    color:$white;
+    margin: 20px 0 40px 0;
+    width:100%;
+    resize:none;
+    padding: 20px 0 0 20px;
+    &::placeholder {
+        opacity:1;
+        font-family: $bodyFont;
+        }
+    }
+}
+
+form.contactForm {
+    background-color:$secondary;
+    padding: 50px 25px;
+    box-shadow: 15px 15px 0 $accent;
+    input {
+        background-color: $secondary;
+    }
+    textarea {
+        background-color: $secondary;
+    }
+}
+

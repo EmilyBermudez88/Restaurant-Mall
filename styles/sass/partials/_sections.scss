@@ -286,3 +286,41 @@ aside {
         }
     }
 }
+
+// CONTACT PAGE
+
+.contactContainer {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    .contactTextContainer {
+        width:30%;
+        margin-top:-40px;
+        ul {
+            display:flex;
+            flex-direction:row;
+        }
+    }
+    .contactForm {
+        position:relative;
+        top:-120px;
+    }
+}
+
+ul{
+    li{
+        margin-right:15px;
+        i {
+            font-size:1.25rem;
+            color:$accent;
+        }
+    }
+}
+
+.contactInfo {
+    p{
+        &:first-child{
+            margin-bottom:20px;
+        }
+    }   
+}

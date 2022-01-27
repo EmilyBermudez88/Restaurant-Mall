@@ -96,3 +96,13 @@ a {
     background-color: $black;
     }
 }
+
+button {
+    width: 100%;
+    background-color: $accent;
+    border:none;
+    font-family:$headingFont;
+    text-transform: uppercase;
+    line-height: 41.6px;
+    cursor:pointer;
+}
