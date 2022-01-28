@@ -725,6 +725,12 @@ footer p {
 .feature .featureTextContainer div {
   padding: 20px 0;
 }
+.feature .featureTextContainer .featurePost {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
 .featureTextContainer {
   background-color: #171B0E;
@@ -761,7 +767,10 @@ footer p {
   top: -120px;
 }
 
-ul {
+.socialLinks {
+  margin-bottom: 20px;
+}
+.socialLinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,16 +779,12 @@ ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-ul li {
+.socialLinks ul li {
   margin-right: 15px;
 }
-ul li i {
+.socialLinks ul li i {
   font-size: 1.25rem;
   color: #FFd300;
-}
-
-.contactInfo p:first-child {
-  margin-bottom: 20px;
 }
 
 form input {
@@ -1113,5 +1118,30 @@ form.contactForm textarea {
   }
   .feature .featureTextContainer div h4 {
     font-size: 1.1rem;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contactContainer .contactTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 75%;
+    margin: -40px 0 40px 0;
+  }
+  .contactContainer form {
+    width: calc(100% - 15px);
+    left: -7px;
   }
 }

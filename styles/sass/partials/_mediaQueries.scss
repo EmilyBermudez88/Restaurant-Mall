@@ -246,4 +246,20 @@
             }
         }    
     }
+
+    /// CONTACT PAGE ///
+    .contactContainer {
+        flex-direction: column-reverse;
+        .contactTextContainer {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 75%;
+            margin: -40px 0 40px 0;
+        }
+        form {
+            width: calc(100% - 15px);
+            left: -7px;
+        }
+    }
 }

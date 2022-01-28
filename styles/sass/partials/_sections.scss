@@ -266,9 +266,11 @@ footer {
         div {
             padding: 20px 0;
         }
+        .featurePost {
+            flex-direction: column;
+        }
     }
 }
-
 
 .featureTextContainer{
     background-color: $secondary;
@@ -300,22 +302,18 @@ footer {
     }
 }
 
-ul{
-    display:flex;
-    flex-direction:row;
-    li{
-        margin-right:15px;
-        i {
-            font-size:1.25rem;
-            color:$accent;
+.socialLinks {
+    margin-bottom:20px;
+    ul{
+        display:flex;
+        flex-direction:row;
+        li{
+            margin-right:15px;
+            i {
+                font-size:1.25rem;
+                color:$accent;
+            }
         }
     }
 }
 
-.contactInfo {
-    p{
-        &:first-child{
-            margin-bottom:20px;
-        }
-    }   
-}
