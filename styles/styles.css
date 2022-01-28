@@ -940,10 +940,13 @@ form.contactForm textarea {
     margin-right: 5%;
   }
 
-  form input {
+  .contactContainer .contactForm {
+    top: -80px;
+  }
+  .contactContainer .contactForm input {
     width: 100%;
   }
-  form input[type=text] {
+  .contactContainer .contactForm input[type=text] {
     margin-bottom: 30px;
   }
 }

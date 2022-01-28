@@ -91,14 +91,18 @@
     }
 
     /// FORMS ///
-    form {
-        input {
-            width: 100%;
-        }
-        input[type="text"] {
-            margin-bottom: 30px;
+    .contactContainer {
+        .contactForm {
+            top: -80px;
+            input {
+                width: 100%;
+                }
+            input[type="text"] {
+                margin-bottom: 30px;
+            }
         }
     }
+    
 }
 
 ////////// MAX-WIDTH: 750PX ////////////
