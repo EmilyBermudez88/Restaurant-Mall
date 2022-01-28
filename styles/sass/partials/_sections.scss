@@ -88,11 +88,6 @@
     }
 }
 
-// get rid of position absolute, change it to relative
-// justify-content to flex-start instead of flex-end
-// get rid of height restrictions 
-// get rid of wrapper in HTML 
-
 ///////// GIVEAWAY SECTION/////////
 
 .giveawayContainer {
@@ -298,10 +293,6 @@ footer {
     .contactTextContainer {
         width:30%;
         margin-top:-40px;
-        ul {
-            display:flex;
-            flex-direction:row;
-        }
     }
     .contactForm {
         position:relative;
@@ -310,6 +301,8 @@ footer {
 }
 
 ul{
+    display:flex;
+    flex-direction:row;
     li{
         margin-right:15px;
         i {

@@ -103,7 +103,7 @@
 
 ////////// MAX-WIDTH: 750PX ////////////
 @media(max-width:750px) {
-    // HOMEPAGE
+    /// HOMEPAGE///
     .homeHeader {
         height: 60vh;
     }
@@ -158,18 +158,92 @@
     .atmosphere {
         margin: 80px auto;
     }
+
+    .nature {
+        flex-direction:column;
+        .natureImgContainer {
+            img {
+                max-height:300px;
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        .natureTextContainer {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width:100%;
+            margin-left:0;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+
+    /// BLOG PAGE /// 
+    .blogMain {
+        flex-direction:column;
+        .stickyContainer {
+            width:100%;
+        }
+        .blogContent {
+            width:100%;
+            margin-left: 0;
+            .employment {
+                border: none;
+            }
+            .wrapper2 {
+                width: 90%;
+            }
+        }
+        
+    }
+    .employmentTextContainer {
+        margin-top:75px;
+    }
+    .employmentImgContainer {
+        width: 90%;
+        margin: 30px auto 0 auto;
+        max-height: 450px;
+        position:static;
+        img{
+            height:100%;
+        }
+    }
+
+    .feature {
+        display:flex;
+        flex-direction:row;
+        margin-top:30px;
+        width: 90%;
+        .featureImgContainer {
+            z-index:30;
+            height:200px;
+            width:200px;
+            box-shadow: 10px 10px 0 $secondary;
+            img {
+            width: 100%;
+            height:100%;
+            object-fit:cover;
+            }
+        }
+        .featureTextContainer {
+            width: 70%;
+            margin-left: 0;
+            top:0px;
+            display:flex;
+            justify-content: space-between;
+            div {
+                width:45%;
+                p,
+                li {
+                    font-size:0.8rem;
+                    line-height:20px;
+                }
+                h4 {
+                    font-size: 1.1rem;
+                }
+            }
+        }    
+    }
 }
-
-
-
-    // .nature {
-    //     flex-direction: column;
-    //     .natureImgContainer{
-    //         img {
-    //             height:300px;
-    //             width:80%;
-    //             margin:0 auto;
-    //             object-position: 80%;
-    //         }
-    //     }
-    // }
