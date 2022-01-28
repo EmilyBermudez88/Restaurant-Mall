@@ -301,15 +301,17 @@ h5, li, p {
 ul {
   list-style: none;
 }
-ul a {
+ul li a {
   text-transform: capitalize;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 1px;
   padding: 0 0 5px 0;
 }
-ul a:hover {
+ul li a:hover, ul li a:focus {
+  border: none;
   border-bottom: #FFd300 3px solid;
+  outline: 0;
 }
 
 a {
@@ -352,6 +354,11 @@ header .headerImgContainer {
   right: 0;
   bottom: -170px;
 }
+header .headerImgContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 nav {
   padding-top: 40px;
@@ -363,11 +370,14 @@ nav ul {
 }
 nav ul li {
   margin-right: 40px;
+  padding: 0 5px;
 }
 
 h1 {
   max-width: 40%;
   margin-top: 70px;
+  position: relative;
+  z-index: 10;
 }
 h1 span {
   display: inline-block;
@@ -382,6 +392,9 @@ h1 span {
   background-image: url(../assets/blog-header2.jpg);
   background-position: 75%;
 }
+.blogHeader h1 {
+  margin-top: 100px;
+}
 
 .contactHeader {
   height: 65vh;
@@ -389,7 +402,8 @@ h1 span {
   background-position: 75%;
 }
 .contactHeader h1 {
-  max-width: 60%;
+  max-width: 70%;
+  margin-top: 100px;
 }
 
 .about {
@@ -449,7 +463,6 @@ h1 span {
   position: relative;
 }
 .highlights .highlightsContainer {
-  border: 5px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,8 +487,7 @@ h1 span {
 .burgerImgContainer,
 .newDishImgContainer {
   position: absolute;
-  max-height: 400px;
-  border: 15px solid white;
+  height: 400px;
 }
 .burgerImgContainer img,
 .newDishImgContainer img {
@@ -489,10 +501,20 @@ h1 span {
   left: 0;
   top: -30px;
 }
+.burgerImgContainer img {
+  -webkit-box-shadow: 15px 15px 0 #FFd300;
+          box-shadow: 15px 15px 0 #FFd300;
+}
+
 .newDishImgContainer {
   right: 0;
-  bottom: -30px;
+  bottom: -20px;
 }
+.newDishImgContainer img {
+  -webkit-box-shadow: -15px 15px 0 #FFd300;
+          box-shadow: -15px 15px 0 #FFd300;
+}
+
 .burgerTextContainer,
 .newDishTextContainer {
   margin: 80px 0;
@@ -555,14 +577,14 @@ h1 span {
   margin: 20px auto;
 }
 .nature .natureImgContainer {
-  -webkit-box-shadow: -15px 15px 0 #FFd300;
-          box-shadow: -15px 15px 0 #FFd300;
   margin-left: 15px;
 }
 .nature .natureImgContainer img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: -15px 15px 0 #FFd300;
+          box-shadow: -15px 15px 0 #FFd300;
 }
 
 .gallery {
@@ -761,7 +783,7 @@ ul li i {
 }
 
 form input {
-  width: 47%;
+  width: 46%;
   border: none;
   border-bottom: 2px solid #FFd300;
   padding: 0 0 20px 20px;
@@ -833,4 +855,153 @@ form.contactForm input {
 }
 form.contactForm textarea {
   background-color: #171B0E;
+}
+
+@media (max-width: 950px) {
+  .homeHeader {
+    background-position: 60%;
+    height: 75vh;
+  }
+  .homeHeader .headerImgContainer {
+    bottom: -80px;
+  }
+  .homeHeader li {
+    background-color: rgba(23, 27, 14, 0.7);
+    padding: 2px 3px 4px 3px;
+  }
+
+  .about {
+    margin-top: 140px;
+  }
+
+  .aboutContainer .mallInfo .infoTextContainer {
+    margin-left: 25px;
+  }
+
+  .highlights {
+    min-height: 60vh;
+  }
+  .highlights .burgerTextContainer,
+.highlights .newDishTextContainer {
+    margin: 60px 0;
+    width: calc(50% - 40px);
+  }
+  .highlights .burgerImgContainer,
+.highlights .newDishImgContainer {
+    height: 375px;
+    width: calc(50% - 40px);
+  }
+
+  .nature .natureTextContainer {
+    width: 65%;
+  }
+  .nature .natureImgContainer {
+    height: 350px;
+  }
+  .nature .natureImgContainer img {
+    margin-top: 30px;
+  }
+
+  .blogHeader {
+    height: 50vh;
+  }
+  .blogHeader li {
+    background-color: rgba(23, 27, 14, 0.7);
+    padding: 2px 3px 4px 3px;
+  }
+  .blogHeader h1 {
+    margin-top: 100px;
+    padding-top: 10px;
+    display: inline-block;
+    background-color: rgba(23, 27, 14, 0.7);
+  }
+
+  .blogMain .stickyContainer {
+    width: 30%;
+    margin-right: 0;
+  }
+
+  .feature .featureTextContainer {
+    width: 85%;
+    margin-left: 15%;
+  }
+
+  .contactHeader {
+    height: 50vh;
+  }
+
+  .contactContainer .contactTextContainer {
+    width: 35%;
+    margin-right: 5%;
+  }
+
+  form input {
+    width: 100%;
+  }
+  form input[type=text] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .homeHeader {
+    height: 60vh;
+  }
+
+  .aboutContainer .mallInfo {
+    width: 85%;
+    margin: 0 auto 50px auto;
+  }
+
+  .highlights .highlightsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .highlights .highlightsContainer div {
+    width: 85%;
+  }
+  .highlights .highlightsContainer .burgerImgContainer,
+.highlights .highlightsContainer .newDishImgContainer {
+    position: relative;
+    width: calc(100% - 15px);
+  }
+  .highlights .highlightsContainer .newDishImgContainer {
+    bottom: 0;
+  }
+  .highlights .highlightsContainer .burgerTextContainer,
+.highlights .highlightsContainer .newDishTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 40px auto 50px auto;
+  }
+  .highlights .highlightsContainer .newDishTextContainer {
+    margin-top: 50px;
+  }
+
+  .bannerImgContainer img {
+    min-height: 215px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .giveawayContainer {
+    margin: 80px auto;
+    width: 85%;
+  }
+
+  .atmosphere {
+    margin: 80px auto;
+  }
 }

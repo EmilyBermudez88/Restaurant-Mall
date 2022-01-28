@@ -69,14 +69,19 @@ h5, li, p {
 
 ul {
     list-style: none;
-    a {
-        text-transform: capitalize;
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing:1px;
-        padding: 0 0 5px 0;
-        &:hover {
-            border-bottom: $accent 3px solid;
+    li {
+        a {
+            text-transform: capitalize;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing:1px;
+            padding: 0 0 5px 0;
+            &:hover,
+            &:focus {
+                border:none;
+                border-bottom: $accent 3px solid;
+                outline: 0;
+            }
         }
     }
 }

@@ -1,0 +1,175 @@
+////////// MAX-WIDTH: 950PX /////////
+
+@media(max-width:950px) {
+    /// HOMEPAGE /// 
+    .homeHeader {
+        background-position:60%;
+        height: 75vh;
+        .headerImgContainer {
+            bottom:-80px;
+        }
+        li{
+            background-color: rgba(23,27,14,0.7);
+            padding: 2px 3px 4px 3px;
+        }
+    }
+    
+
+    .about {
+        margin-top: 140px;
+    }
+    .aboutContainer{
+        .mallInfo{
+            .infoTextContainer {
+                margin-left:25px;
+            }
+        }
+    }
+
+    .highlights {
+        min-height: 60vh;
+        .burgerTextContainer,
+        .newDishTextContainer {
+            margin: 60px 0;
+            width:calc(50% - 40px);
+        }
+        .burgerImgContainer,
+        .newDishImgContainer {
+            height: 375px;
+            width:calc(50% - 40px);
+        }
+    }
+
+    .nature {
+        .natureTextContainer {
+            width:65%;
+        }
+        .natureImgContainer {
+            height:350px;
+            img{
+                margin-top:30px;
+            }
+        }
+    }
+
+    /// BLOG PAGE ///
+    .blogHeader {
+        height:50vh;
+        li{
+            background-color: rgba(23,27,14,0.7);
+            padding: 2px 3px 4px 3px;
+        }
+        h1 {
+            margin-top:100px;
+            padding-top:10px;
+            display:inline-block;
+            background-color: rgba(23,27,14,0.7);
+        }
+    }
+    .blogMain {
+        .stickyContainer {
+            width: 30%;
+            margin-right:0;
+        }
+    }
+    .feature {
+        .featureTextContainer {
+            width: 85%;
+            margin-left:15%;
+        }
+    }
+
+    /// CONTACT PAGE ///
+    .contactHeader {
+        height:50vh;
+    }
+    .contactContainer {
+        .contactTextContainer {
+            width:35%;
+            margin-right: 5%;
+        }
+    }
+
+    /// FORMS ///
+    form {
+        input {
+            width: 100%;
+        }
+        input[type="text"] {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+////////// MAX-WIDTH: 750PX ////////////
+@media(max-width:750px) {
+    // HOMEPAGE
+    .homeHeader {
+        height: 60vh;
+    }
+
+    .aboutContainer {
+        .mallInfo {
+            width:85%;
+            margin: 0 auto 50px auto;
+        }
+    }
+
+    .highlights{
+        .highlightsContainer {
+            flex-direction: column;
+            align-items:center;
+            div {
+                width:85%;
+            }
+            .burgerImgContainer,
+            .newDishImgContainer {
+                position:relative;
+                width:calc(100% - 15px);
+            }
+            .newDishImgContainer {
+                bottom:0;
+            }
+            .burgerTextContainer,
+            .newDishTextContainer {
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                margin: 40px auto 50px auto;
+            }
+            .newDishTextContainer {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .bannerImgContainer {
+        img {
+            min-height:215px;
+            object-fit: cover;
+        }
+    }
+
+    .giveawayContainer {
+        margin: 80px auto;
+        width:85%;
+    }
+
+    .atmosphere {
+        margin: 80px auto;
+    }
+}
+
+
+
+    // .nature {
+    //     flex-direction: column;
+    //     .natureImgContainer{
+    //         img {
+    //             height:300px;
+    //             width:80%;
+    //             margin:0 auto;
+    //             object-position: 80%;
+    //         }
+    //     }
+    // }
