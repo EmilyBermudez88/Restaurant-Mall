@@ -3,18 +3,19 @@
 @media(max-width:950px) {
     /// HOMEPAGE /// 
     header {
-        background-position:60%;
-        height: 75vh;
+        background-position:55%;
+        height: 80vh;
         .headerImgContainer {
             bottom:-80px;
         }
         nav {
-            ul{
-                background-color: rgba(23,27,14,0.7);
-                padding: 2px 3px 4px 3px;
-            }
-        }
-        
+            padding-top: 0;
+        } 
+        h1 {
+            padding-top:10px;
+            display:inline-block;
+            background-color: rgba(23,27,14,0.7);
+        }     
     }
     
     .about {
@@ -56,11 +57,10 @@
 
     /// BLOG PAGE ///
     .blogHeader {
-        height:55vh;
+        height:50vh;
         h1 {
-            margin-top:100px;
             padding-top:10px;
-            // display:inline-block;
+            display:inline-block;
             background-color: rgba(23,27,14,0.7);
         }
     }
@@ -79,11 +79,9 @@
 
     /// CONTACT PAGE ///
     .contactHeader {
-        height:55vh;
+        height:50vh;
         ul{
-            li {
             background-color:transparent;
-            }
         }
     }
     .contactContainer {
@@ -94,15 +92,16 @@
     }
 
     /// FORMS ///
+
+    form {
+        input {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
     .contactContainer {
         .contactForm {
             top: -80px;
-            input {
-                width: 100%;
-                }
-            input[type="text"] {
-                margin-bottom: 30px;
-            }
         }
     }
     
@@ -118,8 +117,8 @@
             .hamburgerMenu {
                 display:inline-block;
                 position:absolute;
-                top: 10px;
-                right: 10px;
+                top: 15px;
+                right: 15px;
                 color: $accent;
                 font-size: 40px;
             }
@@ -131,7 +130,7 @@
                 flex-direction: column;
                 background-color: transparent;
                 position: absolute;
-                z-index:10;
+                z-index:20;
                 overflow:hidden;
                 opacity:0;
                 top: 60px;
@@ -164,6 +163,9 @@
     /// HOMEPAGE///
     .homeHeader {
         height: 60vh;
+        h1{
+            max-width:33%;
+        }
     }
 
     .aboutContainer {
@@ -238,10 +240,20 @@
         }
     }
 
+    .gallery {
+        .wrapper {
+            .galleryImgContainer {
+                width: calc((100% / 3) - 10px);
+            }
+        }
+    }
+
+
     /// BLOG PAGE /// 
     .blogHeader {
         h1 {
             display:inline-block;
+            max-width:35%;
         }
     }
 
@@ -270,18 +282,14 @@
         margin: 30px auto 0 auto;
         max-height: 450px;
         position:static;
-        img{
-            height:100%;
-        }
     }
 
     .feature {
         display:flex;
         flex-direction:row;
         margin-top:30px;
-        width: 90%;
+        width: 95%;
         .featureImgContainer {
-            z-index:30;
             height:200px;
             width:200px;
             box-shadow: 10px 10px 0 $secondary;
@@ -334,3 +342,66 @@
         }
     }
 }
+
+////////// MAX WIDTH: 580PX ///////////
+
+@media(max-width:575px) {
+    /// HOME PAGE///
+    
+    h1 {
+        font-size:3rem; 
+        margin-top:10vh;
+    }
+    .homeHeader {
+        h1 {
+            margin-top: 15vh;
+        }
+    }
+
+    .aboutContainer {
+        .mallInfo {
+            width:100%;
+        }
+    }
+
+    .highlights{
+        .highlightsContainer {
+            div {
+                width:100%;
+            }
+        }
+    }
+    .giveawayContainer {
+        width:100%;
+    }
+
+    /// BLOG PAGE ///
+    .blogHeader {
+        height: 40vh;
+    }
+
+    .feature {
+        .featureTextContainer {
+            flex-direction:column;
+            .featurePost,
+            .featureReso {
+                width:100%;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    /// CONTACT PAGE ///
+    .contactHeader {
+        height: 40vh;
+    }
+    .contactContainer {
+        .contactTextContainer {
+            width: 100%;
+        }
+    }
+}
+
+
+
+// add a media query in for bigger screens for the blog page- above 1200px width

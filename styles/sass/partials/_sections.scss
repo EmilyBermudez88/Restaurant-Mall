@@ -259,9 +259,9 @@ footer {
     .featureTextContainer {
         position:relative;
         top:-15px;
-        width:80%;
+        width:85%;
         height:100%;
-        margin-left:20%;
+        margin-left:15%;
         padding:15px 15px 0 15px;
         div {
             padding: 20px 0;
@@ -280,8 +280,11 @@ footer {
     ul{
         list-style:disc;
         list-style-position: inside;
+        display:flex;
+        flex-direction: column;
         li {
         color:$white;
+        margin-right: 0;
         }
     }
 }
@@ -307,8 +310,10 @@ footer {
     ul{
         display:flex;
         flex-direction:row;
+        background-color: transparent;
         li{
-            margin-right:15px;
+            margin-right:10px;
+            padding-left: 0;
             i {
                 font-size:1.25rem;
                 color:$accent;
