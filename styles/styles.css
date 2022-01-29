@@ -363,12 +363,19 @@ header .headerImgContainer img {
 nav {
   padding-top: 40px;
 }
-nav ul {
+nav label {
+  display: none;
+}
+nav input[type=checkbox] {
+  opacity: 0;
+}
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav ul li {
+ul li {
   margin-right: 40px;
   padding: 0 5px;
 }
@@ -863,14 +870,14 @@ form.contactForm textarea {
 }
 
 @media (max-width: 950px) {
-  .homeHeader {
+  header {
     background-position: 60%;
     height: 75vh;
   }
-  .homeHeader .headerImgContainer {
+  header .headerImgContainer {
     bottom: -80px;
   }
-  .homeHeader li {
+  header nav ul {
     background-color: rgba(23, 27, 14, 0.7);
     padding: 2px 3px 4px 3px;
   }
@@ -908,11 +915,7 @@ form.contactForm textarea {
   }
 
   .blogHeader {
-    height: 50vh;
-  }
-  .blogHeader li {
-    background-color: rgba(23, 27, 14, 0.7);
-    padding: 2px 3px 4px 3px;
+    height: 55vh;
   }
   .blogHeader h1 {
     margin-top: 100px;
@@ -932,7 +935,10 @@ form.contactForm textarea {
   }
 
   .contactHeader {
-    height: 50vh;
+    height: 55vh;
+  }
+  .contactHeader ul li {
+    background-color: transparent;
   }
 
   .contactContainer .contactTextContainer {
@@ -951,6 +957,47 @@ form.contactForm textarea {
   }
 }
 @media (max-width: 750px) {
+  header nav,
+.contactHeader nav {
+    display: inline-block;
+  }
+  header nav .hamburgerMenu,
+.contactHeader nav .hamburgerMenu {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #FFd300;
+    font-size: 40px;
+  }
+  header nav input[type=checkbox]:checked ~ ul,
+.contactHeader nav input[type=checkbox]:checked ~ ul {
+    right: 10px;
+  }
+  header nav ul,
+.contactHeader nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    right: -175px;
+    top: 60px;
+  }
+  header nav ul li,
+.contactHeader nav ul li {
+    border-bottom: 2px solid #FFF;
+    padding: 5px 40px 5px 20px;
+    background-color: #171B0E;
+    margin-right: 0;
+  }
+
+  header li a:hover, header li a:focus {
+    color: #FFd300;
+    border-bottom: 0;
+  }
+
   .homeHeader {
     height: 60vh;
   }
@@ -1141,7 +1188,7 @@ form.contactForm textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 75%;
-    margin: -40px 0 40px 0;
+    margin: -10px 0 40px 0;
   }
   .contactContainer form {
     width: calc(100% - 15px);

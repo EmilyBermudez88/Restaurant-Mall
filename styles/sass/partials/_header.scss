@@ -17,16 +17,25 @@ header {
     }
 }
 
-nav {
-    padding-top: 40px;
-    ul{
-        display:flex;
-        li{
-            margin-right: 40px;
-            padding: 0 5px;
-        }
+nav{
+    padding-top:40px;
+    label {
+        display:none;
+    }
+    input[type="checkbox"] {
+        opacity:0;
     }
 }
+
+ul{
+    display:flex;
+    li{
+        margin-right: 40px;
+        padding: 0 5px;
+    }
+}
+
+
 
 h1 {
     max-width: 40%;

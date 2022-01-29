@@ -2,19 +2,21 @@
 
 @media(max-width:950px) {
     /// HOMEPAGE /// 
-    .homeHeader {
+    header {
         background-position:60%;
         height: 75vh;
         .headerImgContainer {
             bottom:-80px;
         }
-        li{
-            background-color: rgba(23,27,14,0.7);
-            padding: 2px 3px 4px 3px;
+        nav {
+            ul{
+                background-color: rgba(23,27,14,0.7);
+                padding: 2px 3px 4px 3px;
+            }
         }
+        
     }
     
-
     .about {
         margin-top: 140px;
     }
@@ -54,11 +56,7 @@
 
     /// BLOG PAGE ///
     .blogHeader {
-        height:50vh;
-        li{
-            background-color: rgba(23,27,14,0.7);
-            padding: 2px 3px 4px 3px;
-        }
+        height:55vh;
         h1 {
             margin-top:100px;
             padding-top:10px;
@@ -81,7 +79,12 @@
 
     /// CONTACT PAGE ///
     .contactHeader {
-        height:50vh;
+        height:55vh;
+        ul{
+            li {
+            background-color:transparent;
+            }
+        }
     }
     .contactContainer {
         .contactTextContainer {
@@ -107,6 +110,51 @@
 
 ////////// MAX-WIDTH: 750PX ////////////
 @media(max-width:750px) {
+    /// NAVIGATION /// 
+    header,
+    .contactHeader {
+        nav {
+            display: inline-block;
+            .hamburgerMenu {
+                display:inline-block;
+                position:absolute;
+                top: 10px;
+                right: 10px;
+                color: $accent;
+                font-size: 40px;
+            }
+            input[type="checkbox"]:checked ~ ul {
+                right: 10px;
+            }
+            ul {
+                flex-direction: column;
+                background-color: transparent;
+                position: absolute;
+                right: -175px;
+                
+                top: 60px;
+                li {
+                    border-bottom: 2px solid $white;
+                    padding: 5px 40px 5px 20px;
+                    background-color: $secondary;
+                    margin-right:0;
+                }
+            }
+        }
+    }
+
+    header {
+        li {
+            a{
+                &:hover,
+                &:focus {
+                    color: $accent;
+                    border-bottom: 0;
+                }
+            }
+        }    
+    }
+
     /// HOMEPAGE///
     .homeHeader {
         height: 60vh;
@@ -259,7 +307,7 @@
             flex-direction: row;
             justify-content: space-between;
             width: 75%;
-            margin: -40px 0 40px 0;
+            margin: -10px 0 40px 0;
         }
         form {
             width: calc(100% - 15px);
