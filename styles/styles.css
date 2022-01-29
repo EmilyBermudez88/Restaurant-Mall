@@ -898,7 +898,7 @@ form.contactForm textarea {
   header h1 {
     padding-top: 10px;
     display: inline-block;
-    background-color: rgba(23, 27, 14, 0.7);
+    background-color: #171B0E;
   }
 
   .about {
@@ -939,7 +939,7 @@ form.contactForm textarea {
   .blogHeader h1 {
     padding-top: 10px;
     display: inline-block;
-    background-color: rgba(23, 27, 14, 0.7);
+    background-color: #171B0E;
   }
 
   .blogMain .stickyContainer {
@@ -984,8 +984,10 @@ form.contactForm textarea {
     position: absolute;
     top: 15px;
     right: 15px;
+    padding: 5px 10px 0 10px;
+    background-color: #171B0E;
     color: #FFd300;
-    font-size: 40px;
+    font-size: 50px;
   }
   header nav input[type=checkbox]:checked + ul,
 .contactHeader nav input[type=checkbox]:checked + ul {
@@ -1003,7 +1005,7 @@ form.contactForm textarea {
     z-index: 20;
     overflow: hidden;
     opacity: 0;
-    top: 60px;
+    top: 70px;
     right: 10px;
     height: 0px;
     -webkit-transition: height 0.8s ease, opacity 0.8s ease-out;
@@ -1082,6 +1084,9 @@ form.contactForm textarea {
     margin: 80px auto;
     width: 85%;
   }
+  .giveawayContainer h2 {
+    text-align: center;
+  }
 
   .atmosphere {
     margin: 80px auto;
@@ -1122,7 +1127,7 @@ form.contactForm textarea {
 
   .blogHeader h1 {
     display: inline-block;
-    max-width: 35%;
+    max-width: 50%;
   }
 
   .blogMain {
@@ -1245,8 +1250,20 @@ form.contactForm textarea {
     margin-top: 10vh;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
   .homeHeader h1 {
     margin-top: 15vh;
+    max-width: 45%;
+  }
+  .homeHeader .headerImgContainer {
+    width: 55%;
   }
 
   .aboutContainer .mallInfo {
@@ -1255,6 +1272,13 @@ form.contactForm textarea {
 
   .highlights .highlightsContainer div {
     width: 100%;
+  }
+  .highlights .highlightsContainer .burgerImgContainer,
+.highlights .highlightsContainer .newDishImgContainer {
+    height: 300px;
+  }
+  .highlights h3 {
+    text-align: center;
   }
 
   .giveawayContainer {
@@ -1277,11 +1301,52 @@ form.contactForm textarea {
     padding: 10px 0;
   }
 
+  .commentTextContainer span {
+    display: block;
+  }
+
   .contactHeader {
     height: 40vh;
   }
 
   .contactContainer .contactTextContainer {
     width: 100%;
+  }
+  .contactContainer .contactTextContainer .contactInfo {
+    padding-left: 15px;
+  }
+  .contactContainer .contactForm {
+    top: -50px;
+  }
+}
+@media (max-width: 380px) {
+  input,
+textarea {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .homeHeader h1 {
+    max-width: 42%;
+  }
+
+  .aboutContainer .mallInfo .infoTextContainer {
+    margin-left: 15px;
+  }
+
+  .highlights .highlightsContainer .burgerImgContainer,
+.highlights .highlightsContainer .newDishImgContainer {
+    height: 260px;
+  }
+
+  .commentTextContainer span {
+    display: inline-block;
+  }
+
+  .contactTextContainer p {
+    font-size: 0.9rem;
   }
 }

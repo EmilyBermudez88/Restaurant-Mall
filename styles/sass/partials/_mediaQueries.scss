@@ -14,7 +14,7 @@
         h1 {
             padding-top:10px;
             display:inline-block;
-            background-color: rgba(23,27,14,0.7);
+            background-color: $secondary;
         }     
     }
     
@@ -61,7 +61,7 @@
         h1 {
             padding-top:10px;
             display:inline-block;
-            background-color: rgba(23,27,14,0.7);
+            background-color: $secondary;
         }
     }
     .blogMain {
@@ -119,8 +119,10 @@
                 position:absolute;
                 top: 15px;
                 right: 15px;
+                padding: 5px 10px 0 10px;
+                background-color: $secondary;
                 color: $accent;
-                font-size: 40px;
+                font-size: 50px;
             }
             input[type="checkbox"]:checked + ul {
                 height:172px;
@@ -133,7 +135,7 @@
                 z-index:20;
                 overflow:hidden;
                 opacity:0;
-                top: 60px;
+                top: 70px;
                 right: 10px;
                 height:0px;
                 transition: height 0.8s ease, opacity 0.8s ease-out;
@@ -213,6 +215,9 @@
     .giveawayContainer {
         margin: 80px auto;
         width:85%;
+        h2 {
+            text-align: center;
+        }
     }
 
     .atmosphere {
@@ -253,7 +258,7 @@
     .blogHeader {
         h1 {
             display:inline-block;
-            max-width:35%;
+            max-width:50%;
         }
     }
 
@@ -343,7 +348,7 @@
     }
 }
 
-////////// MAX WIDTH: 580PX ///////////
+////////// MAX WIDTH: 575PX ///////////
 
 @media(max-width:575px) {
     /// HOME PAGE///
@@ -352,9 +357,19 @@
         font-size:3rem; 
         margin-top:10vh;
     }
+    h2 {
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
     .homeHeader {
         h1 {
             margin-top: 15vh;
+            max-width:45%;
+        }
+        .headerImgContainer {
+            width: 55%;
         }
     }
 
@@ -369,6 +384,13 @@
             div {
                 width:100%;
             }
+            .burgerImgContainer,
+            .newDishImgContainer {
+                height:300px;
+            }
+        }
+        h3 {
+            text-align: center;
         }
     }
     .giveawayContainer {
@@ -391,6 +413,12 @@
         }
     }
 
+    .commentTextContainer{
+        span {
+            display:block;
+        }
+    }
+
     /// CONTACT PAGE ///
     .contactHeader {
         height: 40vh;
@@ -398,10 +426,62 @@
     .contactContainer {
         .contactTextContainer {
             width: 100%;
+            .contactInfo {
+                padding-left: 15px;
+            }
+        }
+        .contactForm {
+            top:-50px;
         }
     }
 }
 
+///////// MAX WIDTH: 380PX ///////////
 
+@media(max-width:380px) {
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    /// HOME PAGE ///
+    .homeHeader {
+        h1 {
+            max-width: 42%;
+        }
+    }
 
+    .aboutContainer {
+        .mallInfo {
+            .infoTextContainer {
+                margin-left:15px;
+            }
+        }
+    }
+
+    .highlights{
+        .highlightsContainer {
+            .burgerImgContainer,
+            .newDishImgContainer {
+                height:260px;
+            }
+        }
+    }
+
+    /// BLOG PAGE /// 
+    .commentTextContainer {
+        span {
+            display:inline-block;
+        }
+    }
+    /// CONTACT PAGE ///
+    .contactTextContainer {
+        p {
+            font-size: 0.9rem;
+        }  
+    }
+
+}
 // add a media query in for bigger screens for the blog page- above 1200px width
