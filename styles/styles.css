@@ -920,7 +920,6 @@ form.contactForm textarea {
   .blogHeader h1 {
     margin-top: 100px;
     padding-top: 10px;
-    display: inline-block;
     background-color: rgba(23, 27, 14, 0.7);
   }
 
@@ -970,9 +969,10 @@ form.contactForm textarea {
     color: #FFd300;
     font-size: 40px;
   }
-  header nav input[type=checkbox]:checked ~ ul,
-.contactHeader nav input[type=checkbox]:checked ~ ul {
-    right: 10px;
+  header nav input[type=checkbox]:checked + ul,
+.contactHeader nav input[type=checkbox]:checked + ul {
+    height: 172px;
+    opacity: 1;
   }
   header nav ul,
 .contactHeader nav ul {
@@ -982,8 +982,14 @@ form.contactForm textarea {
             flex-direction: column;
     background-color: transparent;
     position: absolute;
-    right: -175px;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
     top: 60px;
+    right: 10px;
+    height: 0px;
+    -webkit-transition: height 0.8s ease, opacity 0.8s ease-out;
+    transition: height 0.8s ease, opacity 0.8s ease-out;
   }
   header nav ul li,
 .contactHeader nav ul li {
@@ -1089,6 +1095,10 @@ form.contactForm textarea {
     text-align: center;
   }
 
+  .blogHeader h1 {
+    display: inline-block;
+  }
+
   .blogMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1158,16 +1168,28 @@ form.contactForm textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .feature .featureTextContainer div {
-    width: 45%;
-  }
-  .feature .featureTextContainer div p,
-.feature .featureTextContainer div li {
+  .feature .featureTextContainer p,
+.feature .featureTextContainer li {
     font-size: 0.8rem;
     line-height: 20px;
   }
-  .feature .featureTextContainer div h4 {
+  .feature .featureTextContainer h4 {
     font-size: 1.1rem;
+  }
+  .feature .featureTextContainer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .feature .featureTextContainer .featureReso {
+    width: 40%;
+  }
+  .feature .featureTextContainer .featurePost {
+    width: 50%;
   }
 
   .contactContainer {
