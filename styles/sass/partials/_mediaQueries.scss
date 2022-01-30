@@ -17,6 +17,11 @@
             background-color: $secondary;
         }     
     }
+    .homeHeader{
+        h1{
+            width: 175px;
+        }
+    }
     
     .about {
         margin-top: 140px;
@@ -167,7 +172,7 @@
     .homeHeader {
         height: 60vh;
         h1{
-            max-width:33%;
+            max-width:175px;
         }
     }
 
@@ -369,16 +374,27 @@
         font-size: 1.75rem;
     }
 
+    header{
+        nav{
+            .hamburgerMenu {
+                font-size: 40px;
+            }
+        }
+    }
+    
     .homeHeader {
         h1 {
             margin-top: 15vh;
-            max-width:45%;
+            max-width:155px;
         }
         .headerImgContainer {
             width: 55%;
         }
     }
 
+    .about {
+        margin-top: 120px;
+    }
     .aboutContainer {
         .mallInfo {
             width:100%;
@@ -456,8 +472,9 @@
 
     /// HOME PAGE ///
     .homeHeader {
-        h1 {
-            max-width: 42%;
+        height:55vh;
+        h1{
+            max-width:130px;
         }
     }
 
