@@ -38,14 +38,11 @@ ul{
 }
 
 
-
 h1 {
-    max-width: 25%;
     margin-top: 15vh;
     position:relative;
     z-index:10;
     display:inline-block;
-    background:rgba(23,27,14,0.7);
     padding: 10px 5px 0 5px;
     span {
         background-color: $white;
@@ -54,12 +51,21 @@ h1 {
         margin-bottom: 10px;
     }
 }
+.homeHeader {
+    h1 {
+        width:175px; 
+        background-color: $secondary;
+    }
+}
 
 // BLOG PAGE
 .blogHeader {
     height: 65vh;
     background-image: url(../assets/blog-header3.jpg);
     background-position:80%;
+    h1{
+        background:rgba(23,27,14,0.7);
+    }
 }
 
 // CONTACT PAGE
@@ -69,7 +75,6 @@ h1 {
     background-position: 75%;
     h1 {
         max-width: 75%;
-        background-color: transparent;
     }
     ul {
         background-color: transparent;

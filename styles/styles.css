@@ -384,12 +384,10 @@ ul li {
 }
 
 h1 {
-  max-width: 25%;
   margin-top: 15vh;
   position: relative;
   z-index: 10;
   display: inline-block;
-  background: rgba(23, 27, 14, 0.7);
   padding: 10px 5px 0 5px;
 }
 h1 span {
@@ -399,10 +397,18 @@ h1 span {
   margin-bottom: 10px;
 }
 
+.homeHeader h1 {
+  width: 175px;
+  background-color: #171B0E;
+}
+
 .blogHeader {
   height: 65vh;
   background-image: url(../assets/blog-header3.jpg);
   background-position: 80%;
+}
+.blogHeader h1 {
+  background: rgba(23, 27, 14, 0.7);
 }
 
 .contactHeader {
@@ -412,7 +418,6 @@ h1 span {
 }
 .contactHeader h1 {
   max-width: 75%;
-  background-color: transparent;
 }
 .contactHeader ul {
   background-color: transparent;
@@ -499,7 +504,7 @@ h1 span {
 .burgerImgContainer,
 .newDishImgContainer {
   position: absolute;
-  height: 400px;
+  height: 420px;
 }
 .burgerImgContainer img,
 .newDishImgContainer img {
@@ -529,7 +534,7 @@ h1 span {
 
 .burgerTextContainer,
 .newDishTextContainer {
-  margin: 80px 0;
+  margin: 115px 0;
 }
 .burgerTextContainer p,
 .newDishTextContainer p {
@@ -884,6 +889,17 @@ form.contactForm textarea {
   background-color: #171B0E;
 }
 
+@media (max-width: 1500px) {
+  .burgerImgContainer,
+.newDishImgContainer {
+    height: 365px;
+  }
+
+  .burgerTextContainer,
+.newDishTextContainer {
+    margin: 80px 0;
+  }
+}
 @media (max-width: 950px) {
   header {
     background-position: 55%;

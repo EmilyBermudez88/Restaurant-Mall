@@ -1,3 +1,19 @@
+/////// MAX-WIDTH:1500PX ///////
+
+@media(max-width:1500px) {
+
+    .burgerImgContainer,
+    .newDishImgContainer {
+        height: 365px
+    }
+    .burgerTextContainer,
+    .newDishTextContainer {
+        margin: 80px 0;
+    }
+}
+
+
+
 ////////// MAX-WIDTH: 950PX /////////
 
 @media(max-width:950px) {
