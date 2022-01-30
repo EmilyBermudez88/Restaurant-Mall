@@ -121,6 +121,7 @@
                 right: 15px;
                 padding: 5px 10px 0 10px;
                 background-color: $secondary;
+                border-radius: 10px;
                 color: $accent;
                 font-size: 50px;
             }
@@ -174,6 +175,9 @@
         .mallInfo {
             width:85%;
             margin: 0 auto 50px auto;
+        }
+        .mallInfo:last-child {
+            margin-bottom:90px;
         }
     }
 
@@ -279,6 +283,7 @@
         }
         
     }
+
     .employmentTextContainer {
         margin-top:75px;
     }
@@ -363,6 +368,7 @@
     h3{
         font-size: 1.75rem;
     }
+
     .homeHeader {
         h1 {
             margin-top: 15vh;
@@ -380,6 +386,9 @@
     }
 
     .highlights{
+        h3 {
+            text-align: center;
+        }
         .highlightsContainer {
             div {
                 width:100%;
@@ -389,10 +398,8 @@
                 height:300px;
             }
         }
-        h3 {
-            text-align: center;
-        }
     }
+
     .giveawayContainer {
         width:100%;
     }
@@ -438,7 +445,7 @@
 
 ///////// MAX WIDTH: 380PX ///////////
 
-@media(max-width:380px) {
+@media(max-width:375px) {
     input,
     textarea {
         font-size: 0.9rem;
@@ -446,6 +453,7 @@
     h1 {
         font-size: 2.5rem;
     }
+
     /// HOME PAGE ///
     .homeHeader {
         h1 {
@@ -470,12 +478,37 @@
         }
     }
 
+    .nature {
+        .natureImgContainer {
+            width:100%;
+            max-height: 250px;
+            margin: 0 auto 45px auto;
+            margin-left:0;
+            img {
+                width:80%;
+            }
+        }
+    }
+
     /// BLOG PAGE /// 
+    .feature {
+        flex-direction:column;
+        width:90%;
+        margin: 15px auto 0 auto;
+        .featureTextContainer {
+            width:100%;
+        }
+        .featureImgContainer {
+            top:0;
+            margin: 0 auto 20px auto;
+        }
+    }
     .commentTextContainer {
         span {
             display:inline-block;
         }
     }
+
     /// CONTACT PAGE ///
     .contactTextContainer {
         p {
