@@ -347,11 +347,18 @@ a.black:hover, a.black:focus {
 button {
   width: 100%;
   background-color: #FFd300;
-  border: none;
+  border: 1px solid #FFd300;
   font-family: "Josefin Sans";
   text-transform: uppercase;
   line-height: 41.6px;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+button:hover, button:focus {
+  color: #FFd300;
+  background-color: #2B331B;
+  border: 1px solid #FFd300;
 }
 
 header {
@@ -441,7 +448,7 @@ h1 span {
 }
 
 .about {
-  margin-top: 200px;
+  margin: 200px 0 110px 0;
 }
 
 .aboutContainer {
@@ -533,7 +540,7 @@ h1 span {
 
 .burgerImgContainer {
   left: 0;
-  top: -30px;
+  top: -35px;
 }
 .burgerImgContainer img {
   -webkit-box-shadow: 15px 15px 0 #FFd300;
@@ -587,10 +594,6 @@ h1 span {
   width: 100%;
 }
 
-.atmosphere {
-  margin: 110px auto;
-}
-
 .nature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,6 +605,7 @@ h1 span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 110px auto;
 }
 .nature .natureTextContainer {
   width: 70%;
@@ -893,6 +897,28 @@ form textarea::placeholder {
   font-family: "Barlow";
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px dotted #FFd300;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  opacity: 0.6;
+}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: 0.6;
+}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+  opacity: 0.6;
+}
+input:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {
+  opacity: 0.6;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0.6;
+}
+
 form.contactForm {
   background-color: #171B0E;
   padding: 50px 25px;
@@ -1058,7 +1084,7 @@ form.contactForm textarea {
 .contactHeader nav ul li {
     border-bottom: 2px solid #FFF;
     padding: 5px 40px 5px 20px;
-    background-color: #171B0E;
+    background-color: rgba(23, 27, 14, 0.8);
     margin-right: 0;
   }
 

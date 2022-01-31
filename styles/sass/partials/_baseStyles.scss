@@ -120,9 +120,16 @@ a {
 button {
     width: 100%;
     background-color: $accent;
-    border:none;
+    border:1px solid $accent;;
     font-family:$headingFont;
     text-transform: uppercase;
     line-height: 41.6px;
     cursor:pointer;
+    transition: 0.4s;
+    &:hover,
+    &:focus {
+        color:$accent;
+        background-color: $background;
+        border:1px solid $accent;
+    }
 }

@@ -15,6 +15,7 @@ form {
     input[type="text"] {
         margin-right:5%;
     }
+
     textarea {
     background-color: $background;
     border:2px solid $accent;
@@ -26,6 +27,17 @@ form {
     &::placeholder {
         opacity:1;
         font-family: $bodyFont;
+        }
+    }
+}
+
+input,
+textarea {
+    &:focus {
+        outline:none;
+        border: 1px dotted $accent;
+        &::placeholder {
+            opacity: 0.6;
         }
     }
 }

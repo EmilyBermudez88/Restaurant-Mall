@@ -1,6 +1,6 @@
 /////////// ABOUT SECTION ////////////
 .about {
-    margin-top: 200px;
+    margin: 200px 0 110px 0;
 }
 
 .aboutContainer {
@@ -66,7 +66,7 @@
 
 .burgerImgContainer {
     left:0;
-    top: -30px;
+    top: -35px;
     img {
         box-shadow: 15px 15px 0 $accent;
     }
@@ -75,6 +75,7 @@
 .newDishImgContainer {
     right:0;
     bottom: -20px;
+    // 20 + 15 for box shadow//
     img {
         box-shadow: -15px 15px 0 $accent;
     }
@@ -112,15 +113,11 @@
 }
 
 ///////////// ATMOSPHERE /////////////
-
-.atmosphere {
-    margin: 110px auto;
-}
-
 .nature {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 110px auto;
     .natureTextContainer {
         width: 70%;
         margin-left: 55px;
