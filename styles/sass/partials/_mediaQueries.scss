@@ -101,6 +101,9 @@
     /// CONTACT PAGE ///
     .contactHeader {
         height:50vh;
+        h1 {
+            background: transparent;
+        }
         ul{
             background-color:transparent;
         }
@@ -140,7 +143,8 @@
                 position:absolute;
                 top: 15px;
                 right: 15px;
-                padding: 5px 10px 0 10px;
+                padding: 2px 8px 0 8px;
+                line-height:42px;
                 background-color: $secondary;
                 border-radius: 10px;
                 color: $accent;
@@ -280,13 +284,6 @@
 
 
     /// BLOG PAGE /// 
-    .blogHeader {
-        h1 {
-            display:inline-block;
-            max-width:50%;
-        }
-    }
-
     .blogMain {
         flex-direction:column;
         .stickyContainer {

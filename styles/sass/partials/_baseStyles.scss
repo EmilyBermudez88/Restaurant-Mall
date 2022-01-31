@@ -93,12 +93,27 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
+    transition: 0.4s;
     &.yellow {
         background-color: $accent;
         color: $black;
+        border:1px solid $accent;
+        &:hover,
+        &:focus {
+            color:$accent;
+            background-color: $background;
+            border:1px solid $accent;
+        }
     }
     &.black {
-    background-color: $black;
+        background-color: $black;
+        border: 1px solid $black;
+        &:hover,
+        &:focus {
+            color:$black;
+            background-color: $accent;
+            border:1px solid $black;
+        }
     }
 }
 

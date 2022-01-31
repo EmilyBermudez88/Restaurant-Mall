@@ -321,13 +321,27 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 a.yellow {
   background-color: #FFd300;
   color: #0F0F0F;
+  border: 1px solid #FFd300;
+}
+a.yellow:hover, a.yellow:focus {
+  color: #FFd300;
+  background-color: #2B331B;
+  border: 1px solid #FFd300;
 }
 a.black {
   background-color: #0F0F0F;
+  border: 1px solid #0F0F0F;
+}
+a.black:hover, a.black:focus {
+  color: #0F0F0F;
+  background-color: #FFd300;
+  border: 1px solid #0F0F0F;
 }
 
 button {
@@ -975,6 +989,9 @@ form.contactForm textarea {
   .contactHeader {
     height: 50vh;
   }
+  .contactHeader h1 {
+    background: transparent;
+  }
   .contactHeader ul {
     background-color: transparent;
   }
@@ -1004,7 +1021,8 @@ form.contactForm textarea {
     position: absolute;
     top: 15px;
     right: 15px;
-    padding: 5px 10px 0 10px;
+    padding: 2px 8px 0 8px;
+    line-height: 42px;
     background-color: #171B0E;
     border-radius: 10px;
     color: #FFd300;
@@ -1147,11 +1165,6 @@ form.contactForm textarea {
 
   .gallery .wrapper .galleryImgContainer {
     width: calc((100% / 3) - 10px);
-  }
-
-  .blogHeader h1 {
-    display: inline-block;
-    max-width: 50%;
   }
 
   .blogMain {

@@ -171,6 +171,10 @@ footer {
 //////////// BLOG PAGE //////////////
 
 //// Blog-Layout ////
+// .blogBody {
+//     animation: flicker 0.5s 1;
+// }
+
 .blogMain {
     display:flex;
     flex-direction: row;
@@ -288,6 +292,37 @@ footer {
         }
     }
 }
+
+/// BLOG FLICKER ON ///
+// @keyframes flicker {
+//     0% {
+//         opacity:0;
+//     }
+//     15% {
+//         opacity:1;
+//     }
+//     25%{
+//         opacity:0.3;
+//     }
+//     40% {
+//         opacity:0.8;
+//     }
+//     50% {
+//         opacity:0.2;
+//     }
+//     65% {
+//         opacity:1;
+//     }
+//     75%{
+//         opacity:0.5;
+//     }
+//     85% {
+//         opacity:1;
+//     }
+//     100% {
+//         opacity:1;
+//     }
+// }
 
 //////////// CONTACT PAGE /////////////
 
