@@ -376,7 +376,7 @@ header {
 }
 header .headerImgContainer {
   width: 50%;
-  max-width: 800px;
+  max-width: 850px;
   position: absolute;
   right: 0;
   bottom: -170px;
@@ -1062,7 +1062,7 @@ form.contactForm textarea {
     right: 15px;
     padding: 2px 8px 3px 8px;
     line-height: 38px;
-    background-color: #171B0E;
+    background-color: rgba(23, 27, 14, 0.8);
     border-radius: 10px;
     color: #FFd300;
     font-size: 50px;
