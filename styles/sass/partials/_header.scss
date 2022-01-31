@@ -8,6 +8,7 @@ header {
     position: relative;
     .headerImgContainer {
         width:50%;
+        max-width: 800px;
         position:absolute;
         right:0;
         bottom:-170px;

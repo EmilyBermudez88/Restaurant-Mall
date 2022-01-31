@@ -321,13 +321,15 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 a.yellow {
   background-color: #FFd300;
   color: #0F0F0F;
   border: 1px solid #FFd300;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 a.yellow:hover, a.yellow:focus {
   color: #FFd300;
@@ -337,6 +339,8 @@ a.yellow:hover, a.yellow:focus {
 a.black {
   background-color: #0F0F0F;
   border: 1px solid #0F0F0F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 a.black:hover, a.black:focus {
   color: #0F0F0F;
@@ -372,6 +376,7 @@ header {
 }
 header .headerImgContainer {
   width: 50%;
+  max-width: 800px;
   position: absolute;
   right: 0;
   bottom: -170px;
@@ -465,6 +470,12 @@ h1 span {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.aboutContainer a {
+  padding: 0px;
+}
+.aboutContainer h2 {
+  margin-bottom: 18px;
+}
 .aboutContainer .mallInfo {
   width: 45%;
   display: -webkit-box;
@@ -476,9 +487,6 @@ h1 span {
 .aboutContainer .mallInfo .infoTextContainer {
   margin-left: 35px;
   width: 80%;
-}
-.aboutContainer .mallInfo .infoTextContainer h2 {
-  margin-bottom: 18px;
 }
 
 .circle {
@@ -643,10 +651,11 @@ h1 span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.gallery .wrapper .galleryImgContainer {
+
+.galleryImgContainer {
   width: calc((100% / 3) - 30px);
 }
-.gallery .wrapper .galleryImgContainer img {
+.galleryImgContainer img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1051,8 +1060,8 @@ form.contactForm textarea {
     position: absolute;
     top: 15px;
     right: 15px;
-    padding: 2px 8px 0 8px;
-    line-height: 42px;
+    padding: 2px 8px 3px 8px;
+    line-height: 38px;
     background-color: #171B0E;
     border-radius: 10px;
     color: #FFd300;
@@ -1077,8 +1086,8 @@ form.contactForm textarea {
     top: 70px;
     right: 10px;
     height: 0px;
-    -webkit-transition: height 0.8s ease, opacity 0.8s ease-out;
-    transition: height 0.8s ease, opacity 0.8s ease-out;
+    -webkit-transition: height 0.8s ease, opacity 0.5s ease-out;
+    transition: height 0.8s ease, opacity 0.5s ease-out;
   }
   header nav ul li,
 .contactHeader nav ul li {
@@ -1193,7 +1202,7 @@ form.contactForm textarea {
     text-align: center;
   }
 
-  .gallery .wrapper .galleryImgContainer {
+  .galleryImgContainer {
     width: calc((100% / 3) - 10px);
   }
 
@@ -1327,6 +1336,7 @@ form.contactForm textarea {
 
   header nav .hamburgerMenu {
     font-size: 40px;
+    padding-bottom: 0;
   }
 
   .homeHeader h1 {
@@ -1358,6 +1368,13 @@ form.contactForm textarea {
 
   .giveawayContainer {
     width: 100%;
+  }
+
+  .galleryImgContainer {
+    width: calc(50% - 10px);
+  }
+  .galleryImgContainer:nth-child(2) {
+    display: none;
   }
 
   .blogHeader {

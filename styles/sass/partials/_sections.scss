@@ -8,6 +8,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    a {
+        padding: 0px;
+    }
+    h2 {
+        margin-bottom: 18px;
+    }
     .mallInfo {
         width: 45%;
         display:flex;
@@ -16,9 +22,6 @@
         .infoTextContainer {
             margin-left: 35px;
             width: 80%;
-            h2 {
-                margin-bottom: 18px;
-            }
         }
     }
 }
@@ -145,12 +148,12 @@
         flex-direction: row;
         flex-wrap:wrap;
         justify-content: space-between;
-        .galleryImgContainer {
-            width: calc((100% / 3) - 30px);
-            img {
-                object-fit: cover;
-            }
-        }
+    }
+}
+.galleryImgContainer {
+    width: calc((100% / 3) - 30px);
+    img {
+        object-fit: cover;
     }
 }
 

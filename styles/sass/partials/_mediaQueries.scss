@@ -144,8 +144,8 @@
                 position:absolute;
                 top: 15px;
                 right: 15px;
-                padding: 2px 8px 0 8px;
-                line-height:42px;
+                padding: 2px 8px 3px 8px;
+                line-height:38px;
                 background-color: $secondary;
                 border-radius: 10px;
                 color: $accent;
@@ -165,7 +165,7 @@
                 top: 70px;
                 right: 10px;
                 height:0px;
-                transition: height 0.8s ease, opacity 0.8s ease-out;
+                transition: height 0.8s ease, opacity 0.5s ease-out;
                 li {
                     border-bottom: 2px solid $white;
                     padding: 5px 40px 5px 20px;
@@ -275,12 +275,9 @@
         }
     }
 
-    .gallery {
-        .wrapper {
-            .galleryImgContainer {
-                width: calc((100% / 3) - 10px);
-            }
-        }
+
+    .galleryImgContainer {
+        width: calc((100% / 3) - 10px);
     }
 
 
@@ -392,6 +389,7 @@
         nav{
             .hamburgerMenu {
                 font-size: 40px;
+                padding-bottom: 0;
             }
         }
     }
@@ -433,6 +431,13 @@
     .giveawayContainer {
         width:100%;
     }
+
+    .galleryImgContainer {
+        width: calc(50% - 10px);
+        &:nth-child(2) {
+            display:none;
+        }
+    }    
 
     /// BLOG PAGE ///
     .blogHeader {
