@@ -21,6 +21,7 @@
     header {
         background-position:55%;
         height: 80vh;
+        min-height:450px;
         .headerImgContainer {
             bottom:-80px;
         }
@@ -436,6 +437,7 @@
     /// BLOG PAGE ///
     .blogHeader {
         height: 40vh;
+        min-height:300px;
     }
 
     .feature {
@@ -458,6 +460,7 @@
     /// CONTACT PAGE ///
     .contactHeader {
         height: 40vh;
+        min-height:300px;
     }
     .contactContainer {
         .contactTextContainer {
@@ -547,4 +550,3 @@
     }
 
 }
-// add a media query in for bigger screens for the blog page- above 1200px width

@@ -356,6 +356,7 @@ button {
 
 header {
   height: 90vh;
+  min-height: 675px;
   background-image: url(../assets/home-header.jpg);
   background-size: cover;
   background-position: center;
@@ -418,6 +419,7 @@ h1 span {
 
 .blogHeader {
   height: 65vh;
+  min-height: 450px;
   background-image: url(../assets/blog-header3.jpg);
   background-position: 80%;
 }
@@ -427,6 +429,7 @@ h1 span {
 
 .contactHeader {
   height: 65vh;
+  min-height: 450px;
   background-image: url(../assets/contact-header.jpg);
   background-position: 75%;
 }
@@ -918,6 +921,7 @@ form.contactForm textarea {
   header {
     background-position: 55%;
     height: 80vh;
+    min-height: 450px;
   }
   header .headerImgContainer {
     bottom: -80px;
@@ -1332,6 +1336,7 @@ form.contactForm textarea {
 
   .blogHeader {
     height: 40vh;
+    min-height: 300px;
   }
 
   .feature .featureTextContainer {
@@ -1352,6 +1357,7 @@ form.contactForm textarea {
 
   .contactHeader {
     height: 40vh;
+    min-height: 300px;
   }
 
   .contactContainer .contactTextContainer {
