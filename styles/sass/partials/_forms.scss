@@ -1,12 +1,12 @@
 form {
     input {
-        width: 46%;
+        background-color: $background;
         border:none;
         border-bottom: 2px solid $accent;
-        padding:0 0 20px 20px;
-        margin-bottom:20px;
-        background-color: $background;
         color:$white;
+        margin-bottom:20px;
+        width: 46%;
+        padding:0 0 20px 20px;
         &::placeholder{
             opacity:1;
             font-family: $bodyFont;
@@ -22,8 +22,8 @@ form {
     color:$white;
     margin: 20px 0 40px 0;
     width:100%;
-    resize:none;
     padding: 20px 0 0 20px;
+    resize:none;
     &::placeholder {
         opacity:1;
         font-family: $bodyFont;
