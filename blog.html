@@ -102,16 +102,23 @@
                             <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
                         </div>
                     </div><!-- commentContainer end -->
+
+                    <div class="commentContainer guestReview" id="guestReview">
+                        <div class="commentImgContainer">
+                            <img src="./assets/silhouette.jpg" alt="sihouette">
+                        </div>
+                        <div class="commentTextContainer" >
+                            <h5 id="commentDate"> <span id="guestName"></span></h5>
+                            <p id="guestComment"></p>
+                        </div>
+                    </div><!-- commentContainer end -->
             
-                    <form action="">
+                    <form action="" id="blogForm">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" placeholder="Name">
             
-                        <label for="email" class="sr-only">Email Address</label>
-                        <input type="email" id="email" placeholder="Email address">
-            
-                        <label for="comment" class="sr-only">Add Comments Here</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <label for="message" class="sr-only">Add Comments Here</label>
+                        <textarea name="comment" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
                         <button type="submit">Post Comment</button>
                     </form>
                 </div> <!-- wrapper end -->
@@ -123,5 +130,7 @@
     <footer>
         <p>Copyrigth © 2019 Juno College</p>
     </footer>
+
+    <script src="./blogScript.js"></script>
 </body>
 </html>

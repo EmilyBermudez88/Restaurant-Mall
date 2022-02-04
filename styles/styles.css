@@ -801,6 +801,10 @@ footer p {
   margin-right: 0;
 }
 
+.comments .guestReview {
+  display: none;
+}
+
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -845,13 +849,13 @@ footer p {
 }
 
 form input {
-  width: 46%;
+  background-color: #2B331B;
   border: none;
   border-bottom: 2px solid #FFd300;
-  padding: 0 0 20px 20px;
-  margin-bottom: 20px;
-  background-color: #2B331B;
   color: #FFF;
+  margin-bottom: 20px;
+  width: 46%;
+  padding: 0 0 20px 20px;
 }
 form input::-webkit-input-placeholder {
   opacity: 1;
@@ -882,8 +886,8 @@ form textarea {
   color: #FFF;
   margin: 20px 0 40px 0;
   width: 100%;
-  resize: none;
   padding: 20px 0 0 20px;
+  resize: none;
 }
 form textarea::-webkit-input-placeholder {
   opacity: 1;
