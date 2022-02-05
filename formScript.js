@@ -19,9 +19,10 @@
 //FORM DEBUGGING
 
 //when someone hits 'submit' in either form, an alert comes up to say 'thank you for your feedback, we will get back to you....'
-    //an if statement -> if they are missing their name, prompt comes up to add name // else if email is missing, add email - or if missing the correct terminology for email, then prompt comes up // else prompt 'thank you for your feedback, we will get back to you asap'
+    
+//define variables for each of the different inputs: name, email and message (so you can personalize messages)
 
-
+//an IF/ELSE statement -> if they are missing their name, prompt comes up to add name // else if email is missing, add email - or if missing the correct terminology for email, then prompt comes up // else prompt 'thank you for your feedback, we will get back to you asap'
 
 
 const formSubmit = document.getElementById('contactForm');
