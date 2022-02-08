@@ -27,17 +27,19 @@ nav{
     input[type="checkbox"] {
         opacity:0;
     }
-}
-ul{
-    display:flex;
-    background-color: rgba(23,27,14,0.7);
-    padding: 2px 3px 4px 3px;
-    max-width:370px; 
-    li{
-        margin-right: 40px;
-        padding: 0 5px;
+    ul{
+        display:flex;
+        background-color: rgba(23,27,14,0.7);
+        padding: 2px 3px 4px 3px;
+        max-width:370px; 
+        margin: 0;
+        li{
+            margin-right: 40px;
+            padding: 0 5px;
+        }
     }
 }
+
 
 
 h1 {

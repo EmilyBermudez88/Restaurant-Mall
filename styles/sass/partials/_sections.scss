@@ -104,6 +104,28 @@
         margin: 30px auto;
     }
 }
+.questionDiv {
+    margin-top: 25px;
+    border: 1px dotted $accent;
+    width:100%;
+    text-align: center;
+    p{
+        margin-bottom: 10px;
+    }
+    h5 {
+        display:inline-block;
+    }
+    input {
+        margin-left: 10px;
+    }
+    button{
+        width:150px;
+        line-height: 1.5;
+        padding-top:2px;
+        display:block;
+        margin: 20px auto;
+    }
+}
 
 ///////////// BANNER SECTION /////////////
 .bannerImgContainer {
@@ -150,11 +172,52 @@
         justify-content: space-between;
     }
 }
-.galleryImgContainer {
-    width: calc((100% / 3) - 30px);
-    img {
-        object-fit: cover;
+.carousel{
+    position:relative;
+    height: 350px;
+    width: 100%;
+    border: 5px solid $accent;
+    ul{
+        margin: 5px auto;
+        padding:0;
+        height:100%;
+        background-color: transparent;
+        .imageContainer{
+            height:calc(100% - 10px);
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            img{
+                object-fit:cover;
+                height:100%;
+            }
+        }
     }
+    i {
+        position:absolute;
+        color:$accent;
+        font-size: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        &.left {
+            left:5px;
+        }
+        &.right {
+            right:5px;
+        }
+    }
+}
+
+.option2.carousel {
+    width: 400px;
+}
+
+.topImage {
+    z-index:10;
+}
+
+.hideArrow {
+    display:none;
 }
 
 
