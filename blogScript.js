@@ -28,12 +28,12 @@ commentSubmit.addEventListener('submit', function(event){
         //need to display the commentContainer on the page
         const review = document.getElementById('guestReview');
 
-        //remove guestReview class to make comment appear (get rid of dislpay:none)
+        //remove guestReview class to make comment appear (get rid of display:none)
         review.classList.remove('guestReview');
 
         // assigning and posting userName
         const reviewName = document.getElementById('guestName');
-        reviewName.textContent=`by ${userName}`
+        reviewName.textContent=` by ${userName}`;
 
         // getting the current date, and translating it to names instead of all numbers --> then post in h5
         const today = new Date();

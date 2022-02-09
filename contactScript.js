@@ -1,5 +1,6 @@
 //SECOND TRY AT IMAGE GALLERY
 
+//create array of images paths that the event listener will pull from
 const imageArray = [
     './assets/gallery-image-1.jpg',
     './assets/gallery-image-2.jpg',
@@ -24,28 +25,33 @@ const leftArrow = document.getElementById('left');
 const rightArrow = document.getElementById('right');
 
 
-
+//create a loop for the arrows and assign event listeners to each 
 arrows.forEach(function (individualArrow) {
     individualArrow.addEventListener('click', function () {
         const index = imageArray.indexOf(currentSlide);
         console.log(index);
+        //remove the arrow to prevent user from clicking beyond the images available in teh gallery
+            //something to come back to- figure out how to have it loop back to start 
         if (index <= 1) {
             leftArrow.classList.add('hideArrow')
         } else if (index === 2) {
             rightArrow.classList.add('hideArrow')
         }
 
+        //set the index of the array to increase with the right button 
         if (this === rightArrow) {
             leftArrow.classList.remove('hideArrow');
             currentSlide = imageArray[index + 1];
             console.log(currentSlide)
 
+        //set the index of the array to decrease with the left button 
         } else if (this === leftArrow) {
             rightArrow.classList.remove('hideArrow');
             currentSlide = imageArray[index - 1];
             console.log(currentSlide);
         }
 
+        //append the image to the page 
         imageSrc.textContent = `${currentSlide}`;
     })
 })
@@ -65,14 +71,17 @@ const formSubmit = document.getElementById('contactForm');
 formSubmit.addEventListener('submit', function(event){
     event.preventDefault();
 
+    //assign variables to the inputs that the user will be interacting with 
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const messageInput = document.getElementById('message');
 
+    // assign variables to the inputs from user
     const userName = nameInput.value;
     const userEmail = emailInput.value;
     const userMessage = messageInput.value;
     
+    //define conditionals if user leaves something empty
     if (userName === "") {
         alert('Sorry, you forgot to include your name. Please include so we know who to contact!');
     } else if(userEmail === ""){
@@ -89,6 +98,7 @@ formSubmit.addEventListener('submit', function(event){
         emailInput.value = '';
         messageInput.value = '';
 
+        //set the message to disappear 
         setTimeout(function () {
             newElement.style.display = "none"
         }, 2500);

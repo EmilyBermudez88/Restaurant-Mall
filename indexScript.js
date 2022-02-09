@@ -1,4 +1,4 @@
-///////// IMAGE CAROUSEL ///////////
+///////// IMAGE CAROUSEL /////////// --test 1
 
 //store imageContainers in an array 
 const carousel = document.querySelector('.carouselContainer');
